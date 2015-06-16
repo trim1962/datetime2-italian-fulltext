@@ -1,0 +1,26 @@
+\documentclass[italian]{article}
+\usepackage{ifpdf,ifxetex} 
+\ifpdf
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{babel}
+\usepackage{microtype}
+\else
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\setdefaultlanguage{italian}
+\fi 
+\usepackage[showdow,useregional]{datetime2-it-fulltext}
+ \write18{git log -1 --format="\@percentchar ad" --date=short > \jobname.info}
+ \fbox{\input{\jobname.info}}
+\begin{document}
+	\section{Date}
+	\subsection{it-fulltext}
+	\DTMsetdatestyle{it-fulltext}
+	\DTMsettimestyle{it-fulltext}
+	\input{BatTestDate}
+	\section{Time}
+	\subsection{it-fulltext}
+	\DTMsettimestyle{it-fulltext}
+	\input{BatTest}
+\end{document}

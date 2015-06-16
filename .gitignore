@@ -1,0 +1,9 @@
+*.aux
+*.glo
+*.log
+*t.out
+*.pdf
+*.fls
+*.gz
+*.idx
+*.out
