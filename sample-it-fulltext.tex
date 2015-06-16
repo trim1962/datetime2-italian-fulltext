@@ -11,9 +11,12 @@
 \setdefaultlanguage{italian}
 \fi 
 \usepackage[showdow,useregional]{datetime2-it-fulltext}
- \write18{git log -1 --format="\@percentchar ad" --date=short > \jobname.info}
- \fbox{\input{\jobname.info}}
-\begin{document}
+
+
+\begin{document} 
+
+\thispagestyle{empty}
+
 	\section{Date}
 	\subsection{it-fulltext}
 	\DTMsetdatestyle{it-fulltext}
