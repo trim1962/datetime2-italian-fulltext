@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesPackage{datetime2-it-fulltext}[2015/08/06 v1.6]
+\ProvidesPackage{datetime2-it-fulltext}[2015/08/02 v1.6]
 \DeclareOption*{\PassOptionsToPackage{\CurrentOption}{datetime2}}
 \ProcessOptions
 \RequirePackage{datetime2}
@@ -515,8 +515,8 @@ or test {\ifnumequal{##1}{24}}
 		{\ifboolexpr
 				{test {\ifnumequal{##1}{0}}%
 				or test {\ifnumequal{##1}{24}}}%
-				{\DTMitalianmidnight\space\DTMitminuti{##2}\space\DTMitsecondsep\DTMitsecondi{##3}}%
-				{\DTMitaliannoon\space\DTMitminuti{##2}\space\DTMitsecondsep\DTMitsecondi{##3}}}%
-		{ore\space\DTMitore{##1}\space\DTMitminuti{##2}\space\DTMitsecondsep\DTMitsecondi{##3}}%
+				{\DTMitalianmidnight\space\DTMitminuti{##2}\DTMitsecondsep\DTMitsecondi{##3}}%
+				{\DTMitaliannoon\space\DTMitminuti{##2}\DTMitsecondsep\DTMitsecondi{##3}}}%
+		{ore\space\DTMitore{##1}\space\DTMitminuti{##2}\DTMitsecondsep\DTMitsecondi{##3}}%
 }%
 }%

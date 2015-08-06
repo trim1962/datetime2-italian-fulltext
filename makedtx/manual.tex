@@ -1,0 +1,59 @@
+\documentclass{ltxdoc}
+\usepackage{creatdtx}
+\begin{document}
+\title{datetime2-it-fulltext}
+\author{Claudio Duchi email: claduc at libero dot it}
+\maketitle
+This packet defines five styles for datetime2, it-fulltext, it-fulltext-twenty-four, it-fulltext-second, it-fulltext-twenty-four-second, it-fulltext-semplice. The necessary packets are datetime2, itnumpar, ifxetex and ifluatex. The packet is the translation and adaptation of datetime2-en-fulltext.
+
+
+\begin{verbatim}
+\DTMsetdatestyle{it-fulltext}
+\DTMsavetimestamp{mydate}{2015-04-01T08:05:00+01:00}
+\DTMuse{mydate}
+\end{verbatim}
+mercoledì primo aprile, duemilaquindici cinque minuti dopo le otto del mattino CET
+
+\begin{verbatim}
+	\DTMsettimestyle{it-fulltext}
+	\DTMdisplaytime{0}{1}{1}.
+	\end{verbatim}
+0:01:01 un minuto dopo mezzanotte.
+\begin{verbatim}
+\DTMsetdatestyle{it-fulltext-twenty-four}
+\DTMsavetimestamp{mydate}{2015-04-01T08:05:00+01:00}
+\DTMuse{mydate}
+\end{verbatim}
+mercoledì primo aprile, duemilaquindici 08:05:00 CET
+\begin{verbatim}
+\DTMsetdatestyle{it-fulltext-twenty-four}
+\DTMsettimestyle{it-fulltext-twenty-four}
+\DTMsavetimestamp{mydate}{2015-04-01T08:05:00+01:00}
+\DTMuse{mydate}
+\end{verbatim}
+mercoledì primo aprile, duemilaquindici cinque minuti dopo le otto CET
+\begin{verbatim}
+\DTMsetdatestyle{it-fulltext-second}
+\DTMsettimestyle{it-fulltext-second}
+\DTMsavetimestamp{mydate}{2015-04-01T08:05:00+01:00}
+\DTMuse{mydate}
+\end{verbatim}
+mercoledì primo aprile, duemilaquindici cinque minuti e zero secondi dopo le
+otto del mattino CET
+\begin{verbatim}
+\DTMsetdatestyle{it-fulltext-twenty-four-second}
+\DTMsettimestyle{it-fulltext-twenty-four-second}
+\DTMsavetimestamp{mydate}{2015-04-01T08:05:00+01:00}
+\DTMuse{mydate}
+\end{verbatim}
+mercoledì primo aprile, duemilaquindici cinque minuti e zero secondi dopo le
+otto CET
+\begin{verbatim}
+\DTMsetdatestyle{it-fulltext-semplice}
+\DTMsettimestyle{it-fulltext-semplice}
+\DTMsavetimestamp{mydate}{2015-04-01T08:05:00+01:00}
+\DTMuse{mydate}
+\end{verbatim}
+mercoledì primo aprile, duemilaquindici ore otto cinque minuti e zero secondi
+CET
+\end{document}

@@ -1,0 +1,1 @@
+perl makedtx.pl -v -src "datetime2-calendarioromano\.sty=>datetime2-calendarioromano.sty" -author "Claudio Duchi" -date 2015 -src "datetime2-baseromano\.ldf=>datetime2-baseromano.ldf"   -doc manual.tex datetime2-calendarioromano
