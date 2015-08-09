@@ -1,5 +1,7 @@
+%    \begin{macrocode}
 \ProvidesDateTimeModule{it-fulltext-utf8}[2015/05/10 v1.2]
-
+%    \end{macrocode}
+%    \begin{macrocode}
 \newcommand*{\DTMitsecondstring}{secondo}
 \newcommand*{\DTMitsecondsstring}{secondi}
 \newcommand*{\DTMitminutesstring}{minuti}
@@ -57,5 +59,4 @@
 
 \newcommand*{\DTMitmorningstring}{del mattino}
 \newcommand*{\DTMitafternoonstring}{del pomeriggio}
-\endinput
-%%
+%    \end{macrocode}

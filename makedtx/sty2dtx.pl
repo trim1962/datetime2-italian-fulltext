@@ -556,7 +556,7 @@ my $CONFIG_NAME = "sty2dtx.cfg";
 if (!@ARGV || $ARGV[0] !~ /^-[^-]*N/) {
 
 PATH:
-foreach my $path ('.', $ENV{HOME}, dirname($0)) {
+foreach my $path ('.', dirname($0)) {
     foreach my $file ($path.'/'.$CONFIG_NAME, $path.'/.'.$CONFIG_NAME) {
         if (-e $file) {
             $config_file = $file;
